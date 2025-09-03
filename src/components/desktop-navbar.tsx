@@ -14,7 +14,7 @@ export default async function DesktopNavbar() {
       <Button variant="ghost" className="flex items-center gap-2" asChild>
         <Link href="/">
           <HomeIcon className="w-4 h-4" />
-          <span className="hidden lg:inline">Home</span>
+          <span className="hidden lg:inline">Домой</span>
         </Link>
       </Button>
 
@@ -23,7 +23,7 @@ export default async function DesktopNavbar() {
           <Button variant="ghost" className="flex items-center gap-2" asChild>
             <Link href="/notifications">
               <BellIcon className="w-4 h-4" />
-              <span className="hidden lg:inline">Notifications</span>
+              <span className="hidden lg:inline">Уведомления</span>
             </Link>
           </Button>
           <Button variant="ghost" className="flex items-center gap-2" asChild>
@@ -33,14 +33,14 @@ export default async function DesktopNavbar() {
               }`}
             >
               <UserIcon className="w-4 h-4" />
-              <span className="hidden lg:inline">Profile</span>
+              <span className="hidden lg:inline">Профиль</span>
             </Link>
           </Button>
           <UserButton />
         </>
       ) : (
         <SignInButton mode="modal">
-          <Button variant="default">Sign In</Button>
+          <Button variant="default">Войти</Button>
         </SignInButton>
       )}
     </div>
